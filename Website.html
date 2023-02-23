@@ -1,18 +1,214 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title></title>
-  <link href="style.css" rel="stylesheet" />
-</head>
 <body>
-    <textarea name="end test" id="" cols="30" rows="10"></textarea>
 
+  <div id="popup" style="display: none; position: absolute; width: 100%; height: 100%; z-index: 10;" class="flexcenter">
+    <div style="border-radius: 8px; background-color: rgb(30,30,30); width: 300px; height: 300px" class="flexcenter">
 
-  <script src=""></script>
+      <button>Continue</button>
+    </div>
+  </div>
+
+  <style>
+
+    .fadein-class {
+      animation: fadein 0.3s ease-out 0s 1 normal forwards
+    }
+    
+    @keyframes fadein {
+      from {
+        background-color: rgba(0,0,0,0)
+      }
+      to {
+        background-color: rgba(0,0,0,0.5)
+      }
+    }
+  </style>
+
   <script>
+    async function sleep(ms) {
+      return new Promise((resolve) => {
+        setTimeout(resolve, ms);
+      });
+    }
+
+    const popupframe = document.getElementById("popup")
+
+    async function popup() {
+      popupframe.style.display = "flex"
+      popupframe.classList.add('fadein-class')
+    }
   </script>
-</body>
 
-</html>
+  <div style="width: 100%; height: 60px; background-color: rgb(30,30,30); gap: 20px" class="flexcenter">
+    <div class="big flexcenter" style="width: 80%; height: 100%; flex-direction: row">
+      <div style="width: 30%; height: 100%; gap: 20px" class="flexcenter">
+        <a href="https://bloxygen.tk"> <img alt="icon" class="icon pointer" style="height: 40px; width: 40px"></a>
+        <label style="font-size: 20px;  font-weight: bold">Bloxygen</label>
+      </div>
 
+      <div style="width: 50%; height: 100%; gap: 20px;" class="flexcenter">
+
+        <div class="dropdown hoversound">
+          <span style="font-size: 14px"> Games <img style="height: 8px; width: 10px" alt="dropdown-arrow" class="dropdown-arrow"> </span>
+          <div class="dropdown-content">
+            <button class="hoversound">Button 1</button>
+            <button class="hoversound">Button 2</button>
+            <button class="hoversound">Button 3</button>
+            <button class="hoversound">Button 4</button>
+          </div>
+        </div>
+
+
+        <div class="pointer menubutton">
+          <a style="font-size: 14px;" href="https://bloxygen.tk/docs"> API Documentation <img alt="link-icon" class="link Hover"></a>
+            <div class="line hoverline"></div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="small flexcenter">
+      <a href="https://bloxygen.tk"> <img alt="icon" class="icon pointer" style="height: 40px; width: 40px"></a>
+    </div>
+  </div>
+
+  <div style="width: 100%; height: calc(100% - 60px); overflow: auto">
+    <div style="width: 100%; min-height: calc(100% - 100px); background-color: rgb(20,17,23);">
+
+      
+  <title>Bloxygen</title>
+
+<style>
+  .outlinebutton {
+    background-color: rgba(0,0,0,0);
+/*     outline: 1px solid rgb(255,255,255); */
+    transition-duration: 0.2s;
+    font-weight: bold;
+    box-shadow: 0px 0px 0px 2px rgb(255,255,255);
+     
+  }
+  .outlinebutton:hover {
+    background-color: rgba(107,7,216,1);
+    box-shadow: 0px 0px 0px 2px rgb(107,7,216);
+/*     outline: 1px solid rgb(107,7,216); */
+    cursor:pointer;
+  }
+</style>
+
+<div style="width: 100%; height: 100%;">
+  <div style="width: 100%; height: 100%; position: relative">
+    <div style="width: 100%; height: calc(100% - 4px); position: absolute; display: flex; justify-content: center; align-items: center">
+      <img alt="background" src="https://api.bloxygen.repl.co/files/background.webp" style="position: absolute; width:100%; height: 100%; object-fit: cover; filter: blur(1rem)">
+      <div style="position: absolute; flex-direction: column; width: 100%; gap: 20px" class="flexcenter">
+        <label style="width: 100%; text-align: center; vertical-align: middle; font-size: 50px; font-weight: bold; color: rgba(255,255,255,1)">Bloxygen</label>
+        <label style="width: 80%; text-align: center; vertical-align: middle; font-size: 20px; font-weight: bold; color: rgba(200,200,200,1)">We're a very cool game development studio</label>
+       <a href="https://bloxygen.tk/login"> <button class="outlinebutton" style=" font-size: 18px; border: none; border-radius: 100px; padding: 6px 20px;">Login</button></a>
+      </div>
+    </div>
+  </div>
+</div>
+
+    </div>
+    <div style="width: 100%; height: 100px;background-color: rgb(20,17,23);" class="flexcenter">
+      <div style="width: calc(100% - 50px); max-width: 600px; flex-direction: column; gap: 10px;" class="flexcenter">
+
+        <div style="width: 100%; gap:5px;" class="flexcenter">
+          <!--           <button href="https://bloxygen.tk/privacy-policy" class="BottomButton">Privacy Policy</button> -->
+          <a href="https://bloxygen.tk/contact"><button class="BottomButton pointer Hover">Contact</button></a>
+          <a href="https://bloxygen.tk/privacy-policy"><button class="BottomButton pointer Hover">Privacy
+              Policy</button></a>
+        </div>
+
+        <div class="line"></div>
+
+        <div style="width: 100%" class="flexcenter">
+          <label style="color: rgb(150,50,150)">Bloxygen</label>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+              
+                <title>Bloxygen</title>
+                <meta name="description" content="A very cool game development studio, current project: The Void">
+                <link rel="apple-touch-icon" href="https://api.bloxygen.repl.co/files/logo-apple.webp">
+              
+              
+
+
+
+
+<script>
+  //  let elms = document.getElementsByClassName("inputfield");
+  // for (const elm of elms) {
+  //   elm.addEventListener('input', () => {
+  //     // console.log("Changed")
+  //     let length = elm.children[1].value.length
+  //     if (length > 0) {
+  //       elm.setAttribute("content", true)
+  //     } else {
+  //       elm.removeAttribute('content')
+  //     }
+  //   });
+  // }
+
+  setInterval(() => {
+    let elms = document.getElementsByClassName("inputfield");
+    for (const elm of elms) {
+      let length = elm.children[1].value.length
+      if (length > 0) {
+        elm.setAttribute("content", true)
+      } else {
+        elm.removeAttribute('content')
+      }
+    }
+  }, 20)
+</script>
+<script>
+  function preloadImages(array) {
+    if (!preloadImages.list) {
+      preloadImages.list = [];
+    }
+    var list = preloadImages.list;
+    for (var i = 0; i < array.length; i++) {
+      var img = new Image();
+      img.onload = function () {
+        var index = list.indexOf(this);
+        if (index !== -1) {
+          list.splice(index, 1);
+        }
+      }
+      list.push(img);
+      img.src = array[i];
+    }
+  }
+
+  preloadImages(["https://api.bloxygen.repl.co/files/loading2.gif"]);
+
+</script><div>
+    <div class="vtResetstyles">
+    <div id="vtoverlay" class="vtoverlay vthidden w3-animate-right
+    w3-container">
+    <div class="vtmain vthidden" id="vtmain">
+      <div class="vtcontactus">
+          <a id="linktest" href="https://www.virustotal.com">
+            <img class="vtlogo-popup" style=" width: 32px; 
+            height: 32px;" src="chrome-extension://efbjojhplkelaegfbieplglfidafgoka/icons/vt-logo.svg">
+          </a>
+          <a href="https://www.virustotal.com">VT4Browsers
+          </a>
+      </div>
+      <span id="vtclose"><strong>X</strong></span>
+      <div class="vttextpopup vthidden" id="statustext">
+        <div class="vtscanstatus" id="vtscanstatus"></div>
+        <div class="vtprogress vthidden" id="vtprogress"></div>
+        <br id="brfile">
+        <div class="vtscanstatus" id="vtscanfilelink"></div>
+      </div>
+      <div class="vttextpopup vthidden" id="widgettext">
+        <div id="vtwidgetError"></div>
+      </div>
+    </div>
+    </div>
+    </div>
+    <div id="vt-augment-container" class="vtzindex vt-augment drawer" style="background: rgb(49, 61, 90);"></div></div><span class="vttooltiptext vthidden">&nbsp;Click to open VirusTotal report&nbsp;<br>with VT Augment</span><style></style></body>
